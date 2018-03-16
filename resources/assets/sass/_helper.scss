@@ -1,0 +1,162 @@
+$spaceamounts:(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100); //Adjust this to include the pixel amount you need
+
+$sides: (top, bottom, left, right ); //Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+.box-view {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 1px rgba(57, 70, 78, 0.15), 0 0px 1px -4px rgba(57, 70, 78, 0.25);
+  -moz-box-shadow: 0 0 1px rgba(57, 70, 78, 0.15), 0 0px 1px -4px rgba(57, 70, 78, 0.25);
+  box-shadow: 0 0 1px rgba(57, 70, 78, 0.15), 0 0px 1px -4px rgba(57, 70, 78, 0.25);
+}
+.flex-box {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+.flex-4 {
+  flex: 4
+}
+
+.item-align-center {
+  align-items:center;
+}
+.item-align-left {
+  align-items: flex-start;
+}
+.item-align-right {
+  align-items: flex-end;
+}
+.justify-align-left {
+  justify-content:flex-start;
+}
+.justify-align-right {
+  justify-content:flex-end;
+}
+.justify-align-center {
+  justify-content:center;
+}
+.content-align-left {
+  align-content:flex-start;
+}
+.content-align-right {
+  align-content:flex-end;
+}
+.content-align-center {
+  align-content:center;
+}
+.content-align-between{
+  align-content:space-between;
+}
+.content-align-around {
+  align-content:space-around;
+}
+
+.text-blue {
+  color: $light-blue;
+}
+.text-orange {
+  color: $light-orange;
+}
+.text-green {
+  color: $light-green;
+}
+.bg-blue {
+  background: $light-blue;
+  color: #ffffff;
+}
+.bg-orange {
+  background: $light-orange;
+  color: #ffffff;
+}
+.bg-green {
+  background: $light-green;
+  color: #ffffff;
+}
+
+
+.btn-default {
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border:none;
+}
+
+.btn-orange {
+  background-color: $light-orange;
+  color: #ffffff;
+  &:hover, &:active, &:focus {
+    background-color: $light-orange;
+    color: #ffffff;
+  }
+}
+
+.soft-btn {
+  border:1px solid #efefef;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px 8px;
+  font-size: .8em;
+  background: rgba(0,0,0,0.03);
+  text-align: center;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  margin-left: 5px;
+    &:hover,&:focus,&:active {
+      text-decoration: none;
+      color: #ffffff;
+    }
+}
+.soft-orange {
+  background: $light-orange;
+  color: #ffffff;
+    &:hover {
+      color: #ffffff;
+    }
+}
+
+.soft-blue {
+  background: $light_blue;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.soft-green {
+  background: $light-green;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.soft-red {
+  background: $brand-danger;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.false-data {
+  color: #dfdfdf;
+}
