@@ -32,18 +32,35 @@ employees to submit feedback toward each other&#39;s performance review.
 
 #Installation
 
-1. For setup this project you have to clone this git repo from this url
-`` ``
+1. For setup this project you have to clone this git repo from this url 
+    ```
+    git clone https://github.com/sahidhossen/bikroy_project_challenge.git
+    ```
+2. Then run the bellow command for install the nodejs packages. *(Make sure you have install nodejs in your computer)*
+     ```
+     npm install
+    ```
+3. Run the command bellow to download the laravel packages. 
+    ```
+    composer install
+    ```
+4. Create a database and setup the **.env** file with your database connection. Then run the bellow command for migrate the database and seeds the demo user.
+    ```
+    php artisan migrate:refresh --seed
+    ```
+    This command will create a company and user with admin permission
+    ```
+    useremail: xyz@mail.com
+    password: admin123
+    ```
+    
+5. For the best practice create a local virtual host for this project. **(Example: app.xyz )**   
+    - Windows Tutorial [link](http://foundationphp.com/tutorials/apache_vhosts.php)
+    - Mac Tutorial [link](https://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-9-mavericks-osx-10-8-mountain-lion/)
+    
+## Note
 
+Please follow the documentation that I have attached with the email. If you need any farther information please email me. 
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Thanks**
+    
