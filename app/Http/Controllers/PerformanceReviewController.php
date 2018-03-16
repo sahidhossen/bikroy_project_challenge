@@ -76,6 +76,9 @@ class PerformanceReviewController extends Controller
         }
     }
 
+    /*
+     * Parsing review with assigned user and reviewer
+     */
     private function parseFullReview( $review ){
         $review->assign_user = $review->user;
         $review->feedbacks = $review->feedbacks;
@@ -119,6 +122,8 @@ class PerformanceReviewController extends Controller
             $reviews = PerformanceReview::where(['reviewer_id'=>$user->id])->orderBy('created_at', 'DESC')->get();
             if( count($reviews) > 0){
                 foreach( $reviews as $key=>$review){
+                    // Get the each feedback, assigned user and reviewer of the performance review and
+                    // push it to the review object
                     $reviews[$key]->feedbacks = $review->feedbacks;
                     $reviews[$key]->reviewer = $user;
                     $reviews[$key]->assigned = null;

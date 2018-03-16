@@ -10,7 +10,7 @@ use Mockery\Exception;
 class FeedbackController extends Controller
 {
     /*
-     * Create Feedback by assigned user
+     * Create Feedback for assigned user
      */
     public function create( Request $request ){
         try{

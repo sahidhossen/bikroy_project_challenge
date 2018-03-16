@@ -12,7 +12,7 @@ use App\Company;
 class UserController extends Controller
 {
     /*
-     * Get current User
+     * Get current authenticate User
      */
     public function getCurrentUser(){
         try{
@@ -25,7 +25,7 @@ class UserController extends Controller
     }
 
     /*
-     * Get all employee but company ID
+     * Get all employee list but company ID
      */
     public function getAllEmployee(){
         try {
@@ -42,7 +42,7 @@ class UserController extends Controller
     }
 
     /*
-     * Create new employee
+     * Create new employee with the employee role
      * @Role : employee
      * @Company: authenticate user company
      */
@@ -111,6 +111,7 @@ class UserController extends Controller
 
     /*
     * Custom logout from react router
+    * When goes to the reactjs application it will call this method for logout the user
     */
     public function logout(){
         try {

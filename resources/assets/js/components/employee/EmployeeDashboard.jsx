@@ -16,23 +16,15 @@ export default class EmployeeDashboard extends React.Component {
     constructor(props){
         super(props)
     }
+
     componentDidMount(){
         let { fetched } = this.props.feedbacks;
         if( fetched === false )
             this.props.dispatch( fetchAllFeedback() );
     }
 
-
-    componentWillReceiveProps(nextProps){
-        // let { deleted } = nextProps.feedbacks;
-        // if( deleted ) {
-        //     this.props.dispatch({ type: 'NEW_FEEDBACK_RESET' });
-        // }
-    }
-
     reviewList(){
         let { feedbacks, fetched } = this.props.feedbacks;
-
         return ( fetched && feedbacks.length > 0 ) ? feedbacks.map( (review, index) => {
             return (
                 <div className="employee-review review no-border p-b-0" key={index}>

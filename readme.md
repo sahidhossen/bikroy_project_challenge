@@ -36,15 +36,19 @@ employees to submit feedback toward each other&#39;s performance review.
     ```
     git clone https://github.com/sahidhossen/bikroy_project_challenge.git
     ```
-2. Then run the bellow command for install the nodejs packages. *(Make sure you have install nodejs in your computer)*
+2. Then run the below command for install the nodejs packages. *(Make sure you have install nodejs in your computer)*
      ```
      npm install
     ```
-3. Run the command bellow to download the laravel packages. 
+3. Run the below command. It will run webpack and compile the entire javascript and css in one file.
+    ```
+    npm run watch
+    ```
+4. Run the command below to download the laravel packages. 
     ```
     composer install
     ```
-4. Create a database and setup the **.env** file with your database connection. Then run the bellow command for migrate the database and seeds the demo user.
+5. Create a database and setup the **.env** file with your database connection. Then run the bellow command for migrate the database and seeds the demo user.
     ```
     php artisan migrate:refresh --seed
     ```
@@ -54,9 +58,11 @@ employees to submit feedback toward each other&#39;s performance review.
     password: admin123
     ```
     
-5. For the best practice create a local virtual host for this project. **(Example: app.xyz )**   
+6. For the best practice create a local virtual host for this project. **(Example: app.xyz )**   
     - Windows Tutorial [link](http://foundationphp.com/tutorials/apache_vhosts.php)
     - Mac Tutorial [link](https://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-9-mavericks-osx-10-8-mountain-lion/)
+
+7. Go to the website and login with this credential. Hope you will enjoy the UI.    
     
 ## Note
 
