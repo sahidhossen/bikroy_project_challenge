@@ -16,7 +16,7 @@ employees to submit feedback toward each other&#39;s performance review.
 - 	List of performance reviews requiring feedback
 - 	Submit feedback
 
-#Technology 
+# Technology 
 
 - **Laravel 5.5 [(doc)](https://laravel.com/docs/5.5)**
 - **Laravel/Passport** (For API Development - [doc](https://laravel.com/docs/5.5/passwords) )
@@ -30,7 +30,7 @@ employees to submit feedback toward each other&#39;s performance review.
 - **Bootstrap 4**
 
 
-#Installation
+# Installation
 
 1. For setup this project you have to clone this git repo from this url 
     ```
